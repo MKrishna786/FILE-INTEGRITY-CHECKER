@@ -1,0 +1,41 @@
+import hashlib
+
+import os
+
+import tine
+
+f calculate hash(file_path):
+
+hash sha256= hashlib.sha256 ()
+
+with open(file path, 'rb') as file: while chunk file.read(8192): hash sha256.update (chunk)
+
+return hash sha256.hexdigest()
+
+def check file_integrity(file path, stored_hash):
+
+current hash calculate hash(file path)
+
+If current hash stored hash: print("File integrity verified. Bash matches for: (file path)")
+
+else
+
+print("WARNING: File integrity compromised for: [file pathi/" print (f"Current Hash: (current hash)")
+
+def monitor file(file path, stored hash):
+
+while True:
+
+check_file_integrity(file path, stored_hash)
+
+time.sleep(10)
+
+it name file to check "C:/Users/HP/Documents/myfile.txt stored hash value calculate_hash(file_to_check)
+
+printif Stores Bash: (stored hash value)")
+
+monitor file (file to check, stored_hash_value)
+
+Hello, this is a test file.
+
+checking file integrity using hash functions.
